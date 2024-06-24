@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #202124;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    height: 100%;
+}
+.logo-google {
+    height: 92px;
+}
+.icone-input {
+    width: 20px;
+    min-width: 20px;
+    fill: #9aa0a6;
+}
+.icone-teclado {
+    width: 19px;
+}
+.icone-colorido {
+    width: 24px;
+    }
+.caixa-input {
+    width:  583px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+}
+.caixa-input:hover,.caixa-input:focus-within {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: transparent;
+}
+.caixa-icones{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.input-pesquisa{
+    width: 100%;
+    height: 22px;
+    border: none;
+    outline: none;
+}
+.botao {
+    background-color: #f8f9fa;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .botao:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dadce0;
+  }
+  .caixa-botoes{
+    display: flex;
+    gap: 8px;
+  }
+  .caixa-disponibilizado{
+    color: #4d5156;
+    font-size: 13px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10vh;
+  }
+  .link-disponibilizado{
+    color: #1a0dab;
+  }
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 13px;
+    
+}
+a:hover {
+    text-decoration: underline;
+}
+.link-cabecalho {
+    color: #000000de;
+}
+
+.icone-produtos {
+    width: 24px;
+    fill: #5f6368;
+}
+.caixa-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    
+}
+.caixa-icone:hover{
+    background-color: rgba(60, 64, 67, 0.08);
+    border-radius: 50%;
+}
+.caixa-teclado, .caixa-microfone, .caixa-camera, .caixa-icone {
+    cursor: pointer;
+    position: relative;
+}
+.caixa-teclado::after {
+    content: "Ferramentas de introdução";
+}
+.caixa-microfone::after {
+    content: "Pesquisa por voz";
+}
+.caixa-camera::after {
+    content: "Pesquisa por imagem";
+}
+.caixa-icone::after {
+    content: "Google Apps";
+}
+.caixa-teclado::after, .caixa-microfone::after, .caixa-camera::after, .caixa-icone::after {
+    display: none;
+  background-color: #4f5355;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 13px;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 30px);
+}
+.caixa-teclado:hover::after, .caixa-microfone:hover::after, .caixa-camera:hover::after, .caixa-icone:hover::after {
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    padding: 6px 14px;
+}
+.botao--entrar {
+    font-family: Google Sans, Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: #1a73e8;
+    color: #ffffff;
+   
+}
+.botao--entrar:hover {
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.3);
+    border-color: transparent;
+    text-decoration: none;
+}
+.caixa-rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+.caixa-rodape-borda{
+    border-bottom: 1px solid #dadce0;
+}
+.caixa-links {
+    display: flex;
+    gap: 30px;
+}
+footer {
+    background-color: #f2f2f2;
+}
